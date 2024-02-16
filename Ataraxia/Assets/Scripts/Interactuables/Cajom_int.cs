@@ -10,13 +10,13 @@ public class Cajom_int : Interactuar
     {
         if (!Abierto)
         {
-            transform.position = new Vector3(0,0,-1);
+            transform.position = new Vector3(-1.5f,1f,11);
             Abierto = true;
             nombreAccion = "Cerrar";
         }
         else
         {
-            transform.position = new Vector3(0, 0, 0);
+            transform.position = new Vector3(-1, 1, 11);
             Abierto = false;
             nombreAccion = "Abrir";
         }
