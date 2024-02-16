@@ -18,7 +18,7 @@ public class Luz_int : Interactuar
         else
         {
             laLuz.gameObject.SetActive(true);
-            nombreAccion = "Apagarr";
+            nombreAccion = "Apagar";
         }
     }
 }

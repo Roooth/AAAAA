@@ -2,17 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TV_int : MonoBehaviour
+public class TV_int : Interactuar
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameObject Encendido;
+    public override void Activar()
 
-    // Update is called once per frame
-    void Update()
     {
-        
+
+
+        if (Encendido.gameObject.activeInHierarchy)
+        {
+            Encendido.gameObject.SetActive(false);
+            nombreAccion = "Encender TV";
+        }
+        else
+        {
+            Encendido.gameObject.SetActive(true);
+            nombreAccion = "Apagar";
+        }
     }
 }
